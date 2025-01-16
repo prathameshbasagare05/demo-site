@@ -1,0 +1,236 @@
+/* Reset default margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+}
+
+/* Header components wrapper */
+.header-components {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Top row */
+.item1 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right:250px ;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.icon i {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+/* Bottom row */
+.item2 {
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item2 .navbar li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Active state */
+.navbar .nav-link.active {
+    background-color: #DC3636;
+    color: white;
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    background-color: #ECECEC;
+    height: 2000px;
+}
+#pricing .big-box{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    background-color: #fff;
+    margin-top:20px;
+    height: 400px;
+}
+#pricing .big-box .top{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#pricing .big-box .top .left{
+    width: 60%;
+    padding-left: 2rem;
+}
+#pricing .big-box .top .left h1{
+    color: #434343;
+    font-size: 36px;
+    font-family: "Montserrat", serif;
+    
+}
+#pricing .big-box .top .right{
+    font-family: 'PT Sans',serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.topics .navbar li{
+    font-family:  "PT Sans", serif;
+    font-weight: 550;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border-width: 2px;
+}
+.topics .navbar li i{
+    color: rgb(101, 210, 253);
+}
+.topics .navbar .user{
+    border-style: solid;
+    border-color: #ccc;
+}
+.topics .navbar #t1{
+    background-color: pink;
+}
+.topics .navbar #t2{
+    background-color: rgb(170, 170, 170);
+}
+
+
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 160px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.table{
+    display: inline-flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.pricing-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.pricing-column:last-child {
+    border-right: none;
+}
+.price {
+    font-size: 24px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.label {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #666;
+}
+.sign-up {
+    display: block;
+    background-color: #DC3636;
+    color: white;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    width:200px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.apply{
+    display: block;
+    font-size: 15px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width:220px;
+    text-decoration: none;
+}
+
+.bottom{
+    height: 100%;
+    background-color: pink;
+}
