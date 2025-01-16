@@ -1,9 +1,10 @@
-/* Reset default margin */
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
 }
-
+h1,h2{
+    font-family: "Montserrat", serif;
+}
 header {
     border-bottom: 1px solid #ccc;
 }
@@ -15,8 +16,7 @@ html{
     height: 150px;
     flex-direction: row;
 }
-
-/* Logo styling */
+/* HEADER SECTION */
 .logo {
     display: flex;
     align-items: center;
@@ -29,7 +29,6 @@ html{
     color: red;
 }
 
-/* Header components wrapper */
 .header-components {
     display: flex;
     flex-direction: column;
@@ -37,15 +36,13 @@ html{
     height: 100%;
 }
 
-/* Row styling */
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
-
-/* Top row */
+/* TOP ROW */
 .item1 {
     height: 50%;
     display: flex;
@@ -110,11 +107,12 @@ html{
     color: white;
 }
 
+
+/* PRICING SECTION */
 #pricing{
     display: flex;
     justify-content: center;
     background-color: #ECECEC;
-    /* height: 2000px; */
 }
 #pricing .big-box{
     display: flex;
@@ -123,12 +121,10 @@ html{
     background-color: #fff;
     margin-top:20px;
     margin-bottom: 20px;
-    /* height: 400px; */
 }
 #pricing .big-box .top{
     display: flex;
     justify-content: space-around;
-    
 }
 
 #pricing .big-box .top .left{
@@ -170,7 +166,6 @@ html{
 .topics .navbar #t2{
     background-color: rgb(170, 170, 170);
 }
-
 
 .pricing-table {
     display: flex;
@@ -233,7 +228,6 @@ html{
     width:220px;
     text-decoration: none;
 }
-
 .bottom{
     display: flex;
     align-items: center;
@@ -269,12 +263,12 @@ html{
 
 
 
-
+/* REVIEW SECTION */
 #review{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 1000px;
+    /* height: 1000px; */
     background-color: #ECECEC;
 }
 #review .big-box{
@@ -283,7 +277,6 @@ html{
     background-color: #fff;
     margin-top:20px;
     margin-bottom: 20px;
-    /* height: 400px; */
 }
 #review .info1{
     color: hsba(0, 0%, 26%, 1);
@@ -292,6 +285,48 @@ html{
     width:60%;
     padding: 20px;
     margin:20px;
+}
+#review .info1 .share{
+    display: flex;
+    margin-bottom: 20px;
+    color: grey;
+}
+#review .info1 i{
+    padding: 10px;
+}
+#review .info1 .line-break{
+    border-style:solid;
+    border-width:1px ;
+    width: 100%;
+    border-color: #c1c0c0;
+}
+#review .info1 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 900;
+}
+#review .info1 ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#review .info1 .date{
+    margin-top: 20px;
+    margin-bottom:20px;
+    display: flex;
+    gap: 20px;
+}
+#review .info1 p{
+    margin: 0;
+    padding: 0;
+}
+#review .info1 span{
+    color: rgba(67, 67, 67, 1);
+    font-weight: 700;
+    font-size: 18px;
 }
 #review .info2{
     color :hsba(0, 0%, 26%, 1);
@@ -316,6 +351,18 @@ html{
 #review .info2 .photo{
     display: flex;
     width: 100%;
-    
     justify-content: center;
 }
+#review .info2 .btn-review{
+    display: block;
+    font-size: 18px;
+    background-color: #fff;
+    color: rgba(220, 54, 54, 1);
+    border-color: rgba(220, 54, 54, 1);
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    width:200px;
+}
+
