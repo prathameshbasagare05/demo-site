@@ -231,6 +231,37 @@ header {
 }
 
 .bottom{
+    display: flex;
+    align-items: center;
+    line-height: 7px;
     height: 100%;
-    background-color: pink;
+    font-family: 'PT Sans',serif;
+    /* margin-top: 30px; */
+    
+}
+.bottom .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    
+}
+.bottom i{
+    color: #DC3636;
+    padding-right: 4px;
+}
+.bottom p{
+    margin-top: 3px;
+}
+.bottom span{
+    color: #DC3636;
+} 
+
+.divider {
+    display: flex;
+    height: 60px;
+    width: 1px;
+    background-color: #ddd;
 }
