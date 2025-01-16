@@ -1,13 +1,15 @@
 /* Reset default margin */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 header {
     border-bottom: 1px solid #ccc;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container {
     display: flex;
     height: 150px;
@@ -112,7 +114,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #ECECEC;
-    height: 2000px;
+    /* height: 2000px; */
 }
 #pricing .big-box{
     display: flex;
@@ -120,7 +122,8 @@ header {
     width:80%;
     background-color: #fff;
     margin-top:20px;
-    height: 400px;
+    margin-bottom: 20px;
+    /* height: 400px; */
 }
 #pricing .big-box .top{
     display: flex;
@@ -225,6 +228,7 @@ header {
     color: black;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     width:220px;
     text-decoration: none;
@@ -236,8 +240,6 @@ header {
     line-height: 7px;
     height: 100%;
     font-family: 'PT Sans',serif;
-    /* margin-top: 30px; */
-    
 }
 .bottom .text{
     display: flex;
@@ -258,10 +260,62 @@ header {
 .bottom span{
     color: #DC3636;
 } 
-
 .divider {
     display: flex;
-    height: 60px;
+    height: 50px;
     width: 1px;
-    background-color: #ddd;
+    background-color: #c1c0c0;
+}
+
+
+
+
+#review{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background-color: #ECECEC;
+}
+#review .big-box{
+    display: flex;
+    width:80%;
+    background-color: #fff;
+    margin-top:20px;
+    margin-bottom: 20px;
+    /* height: 400px; */
+}
+#review .info1{
+    color: hsba(0, 0%, 26%, 1);
+    font-size: 18px;
+    line-height: 28px;
+    width:60%;
+    padding: 20px;
+    margin:20px;
+}
+#review .info2{
+    color :hsba(0, 0%, 26%, 1);
+    font-size: 18px;
+    line-height: 25px;
+    width: 40%;
+    background-color:#f9e1cd ;
+}
+#review .info2 p{
+    margin: 50px;
+    margin-top: 0;
+}
+#review .info2 span{
+    font-weight: bold;
+    color: rgb(34, 179, 236);
+}
+#review .info2 img{
+    margin-top: 40px;
+    margin-bottom:40px;
+    border-radius: 50%;
+}
+#review .info2 .photo{
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
 }
