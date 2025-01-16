@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="index.js" defer></script>
-        <script src="https://kit.fontawesome.com/ab6ec637f0.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class = "container">
-            <div class="logo"></div>
-            <div class="header-components">
-                <div class = "row item1"></div>
-                <div class="row item2"></div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/ab6ec637f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">Logo</div>
+        <div class="header-components">
+            <!-- Top row -->
+            <div class="row item1">
+                <div class="icon search">
+                    <i class="fas fa-search"></i> Search
+                </div>
+                <div class="icon signin">
+                    <i class="fas fa-user"></i> Sign in
+                </div>
+                <div class="icon cart">
+                    <i class="fas fa-shopping-cart"></i> (0)
+                </div>
             </div>
-        </header>
-    </body>
-
+            <!-- Bottom row -->
+            <div class="row item2">
+                <nav>
+                    <ul>
+                        <li>Classes</li>
+                        <li>Programs & Events</li>
+                        <li>Blogs</li>
+                        <li>About</li>
+                        <li>Get Involved</li>
+                        <li class="cta"><button>Find a Class</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
 </html>
