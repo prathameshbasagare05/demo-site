@@ -1,11 +1,11 @@
 const navLinks = document.querySelectorAll(".nav-link");
+let nav = document.querySelector(".nav-link")
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        // Remove 'active' class from all nav links
-        navLinks.forEach(nav => nav.classList.remove("active"));
-        
-        // Add 'active' class to the clicked link
+        // navLinks.forEach(nav => nav.classList.remove("active"));
+        nav.classList.remove("active");
         link.classList.add("active");
+        nav = link;
     });
 });
     
