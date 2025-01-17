@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.getElementById("navbar");
+
+    menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("show");
+    });
+    document.addEventListener("click", (event) => {
+        if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+            navbar.classList.remove("show");
+        }
+    });
+});
+
+
 const navLinks = document.querySelectorAll(".nav-link");
 let nav = document.querySelector(".nav-link")
 navLinks.forEach(link => {
