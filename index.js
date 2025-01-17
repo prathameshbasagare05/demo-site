@@ -8,3 +8,35 @@ navLinks.forEach(link => {
     });
 });
     
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const prevButton = document.querySelector(".carousel-nav.prev");
+    const nextButton = document.querySelector(".carousel-nav.next");
+    const slidesContainer = document.querySelector(".carousel-slides");
+
+    let currentSlide = 0;
+    console.log(slides);
+    function updateCarousel() {
+        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateCarousel();
+    });
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener("click", () => {
+            currentSlide = index;
+            updateCarousel();
+        });
+    });
+
+    updateCarousel();
+});
