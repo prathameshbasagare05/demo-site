@@ -468,7 +468,6 @@ html{
     display: flex;
     justify-content: center;
     width: 100%;
-    height:300px;
     background-color: #ECECEC;
 }
 #classes .big-box{
@@ -495,6 +494,7 @@ html{
     justify-content: space-between;
     margin:0 5%;
     width: 90%;
+    margin-bottom:40px;
 }
 #classes .c1{
     width: 33%;
@@ -507,4 +507,65 @@ html{
     font-size: 18px;
     font-weight: 400;
     color: rgba(220, 54, 54, 1);
+}
+
+/* POLICY SECTION */
+
+#policy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:300px;
+}
+#policy .box{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
+#policy .email{
+    color: rgb(33, 185, 246);
+}
+#policy .faq{
+    display: flex;
+    justify-content: flex-start;
+}
+#policy .faq a{
+    text-decoration: none;
+    color:rgba(220, 54, 54, 1) ;
+    margin-right:20px;
+}
+#policy .line-break{
+    border-style:solid;
+    border-width:1px ;
+    margin:50px 0;
+    width: 80%;
+    border-color: #c1c0c0;
+}
+#policy .row{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-bottom: 60px;
+}
+#policy .col{
+    width: 25%;
+    padding-right: 5% ;
+}
+#policy .red{
+    color: rgba(220, 54, 54, 1);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:300px;
 }
