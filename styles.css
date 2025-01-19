@@ -50,7 +50,7 @@ html{
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    margin-right:250px ;
+    margin-right:10% ;
 }
 
 .item1 .icon {
@@ -82,6 +82,7 @@ html{
 }
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     list-style: none;
     padding: 0;
@@ -131,6 +132,7 @@ html{
 }
 #pricing .big-box .top{
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 
@@ -164,6 +166,7 @@ html{
     color: rgb(101, 210, 253);
 }
 .topics .navbar .user{
+    min-width: 142px;
     border-style: solid;
     border-color: #ccc;
 }
@@ -237,9 +240,9 @@ html{
 }
 .bottom{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     line-height: 7px;
-    height: 100%;
     font-family: 'PT Sans',serif;
 }
 .bottom .text{
@@ -247,8 +250,9 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 235px;
     width: 33%;
-    height: 100%;
+    height: 100px;
     
 }
 .bottom i{
@@ -275,7 +279,6 @@ html{
     display: flex;
     justify-content: center;
     width: 100%;
-    /* height: 1000px; */
     background-color: #ECECEC;
 }
 #review .big-box{
@@ -558,11 +561,13 @@ html{
 #policy .row{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     padding-left: 0;
     margin-bottom: 60px;
 }
 #policy .col{
+    min-width: 110px;
     width: 25%;
     padding-right: 5% ;
 }
@@ -748,6 +753,9 @@ footer .icon i {
     #classes .big-box{
         width: 100%;
     }
+    .item1{
+        margin-right: 3%;
+    }
     footer .col1{
         margin-left: 0;
     }
@@ -757,8 +765,12 @@ footer .icon i {
     .item2{
         justify-content: flex-end;
     }
+    .item1{
+        margin-right: 0;
+    }
     .item2 .menu-icon {
         padding: 10px;
+        margin-right:5% ;
         display: block;
         color: black;
     }
@@ -783,4 +795,11 @@ footer .icon i {
     .item2 .navbar li {
         margin: 10px 0;
     }
+}
+
+@media (max-width:677px){
+    .big-box .top{
+        flex-wrap: wrap;
+    }
+    
 }
