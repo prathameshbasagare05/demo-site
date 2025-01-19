@@ -241,7 +241,7 @@ html{
 .bottom{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     line-height: 7px;
     font-family: 'PT Sans',serif;
 }
@@ -277,12 +277,16 @@ html{
 /* REVIEW SECTION */
 #review{
     display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
     justify-content: center;
     width: 100%;
     background-color: #ECECEC;
 }
 #review .big-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width:80%;
     background-color: #fff;
     margin-top:20px;
@@ -317,6 +321,7 @@ html{
 }
 #review .info1 ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     list-style:none;
     padding: 0;
@@ -342,6 +347,7 @@ html{
     font-size: 18px;
     line-height: 25px;
     width: 40%;
+    height: 100%;
     background-color:#f9e1cd ;
 }
 #review .info2 p{
@@ -353,6 +359,8 @@ html{
     color: rgb(34, 179, 236);
 }
 #review .info2 img{
+    min-width: 50px;
+    min-height: 50px;
     margin-top: 40px;
     margin-bottom:40px;
     border-radius: 50%;
@@ -360,6 +368,7 @@ html{
 #review .info2 .photo{
     display: flex;
     width: 100%;
+    min-width: 50px;
     justify-content: center;
 }
 #review .info2 .btn-review{
@@ -802,4 +811,16 @@ footer .icon i {
         flex-wrap: wrap;
     }
     
+    #review .big-box{
+        flex-direction: column;
+    }
+    #review .big-box .info2{
+        width: 100%;
+    }
+    #review .big-box .info1{
+        width: 100%;
+    }
+    #review .big-box .info1 p{
+        margin : 0 50px;
+    }
 }
