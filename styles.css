@@ -18,13 +18,12 @@ html{
 }
 /* HEADER SECTION */
 .logo {
-    font-family: "Coiny", serif;
+    font-family: "Montserrat", serif;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
-    font-style: italic;
     font-size: 2.5rem;
     font-weight: bold;
     color: red;
@@ -720,7 +719,15 @@ footer .icon:hover {
 footer .icon i {
     font-size: 24px;
 }
-
+.fend{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+    background-color: rgba(67, 67, 67, 1);
+    color: rgba(255, 255, 255, 1);
+}
 
 /* Responsiveness */
 
@@ -838,6 +845,17 @@ footer .icon i {
     #quotes .quote-box{
         height: 80%;
     }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .col1{
+        width: 80%;
+    }
+    footer .col2{
+        align-items: center;
+        width: 100%;
+    }
 }
 
 @media (max-width:471px){
@@ -853,4 +871,17 @@ footer .icon i {
         display: none;
     }
     
+}
+
+@media (max-width:442px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .logo{
+        padding: 20px;
+    }
+    .header-components{
+        width: auto;
+    }
 }
