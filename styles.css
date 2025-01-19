@@ -278,7 +278,7 @@ html{
 #review{
     display: flex;
     flex-wrap: wrap;
-    /* overflow: hidden; */
+    overflow: hidden;
     justify-content: center;
     width: 100%;
     background-color: #ECECEC;
@@ -379,7 +379,8 @@ html{
     border-color: rgba(220, 54, 54, 1);
     text-align: center;
     border-radius: 20px;
-    margin-left: 50px;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 10px;
     width:200px;
 }
@@ -438,9 +439,9 @@ html{
     line-height: 26px;
 }
 #quotes .symbol{
-    margin-top: 18%;
+    margin: auto 0;
     font-size: 130px;
-    line-height: 200px;
+    height: 100px;
     padding: 0 50px;
     color: rgba(0, 172, 180, 1);
 }
@@ -577,7 +578,7 @@ html{
 }
 #policy .col{
     min-width: 110px;
-    width: 25%;
+    width: 20%;
     padding-right: 5% ;
 }
 #policy .red{
@@ -783,7 +784,9 @@ footer .icon i {
         display: block;
         color: black;
     }
-
+    #policy .col{
+        width: 25%;
+    }
     .item2 .navbar {
         display: none;
         flex-direction: column;
@@ -808,9 +811,12 @@ footer .icon i {
 
 @media (max-width:677px){
     .big-box .top{
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
-    
+    #pricing .big-box .top .left {
+        width: 90%;
+    }
     #review .big-box{
         flex-direction: column;
     }
@@ -822,5 +828,24 @@ footer .icon i {
     }
     #review .big-box .info1 p{
         margin : 0 50px;
+    }
+    #policy .col{
+        width: 40%;
+    }
+    #quotes .symbol{
+        padding: 0;
+        margin: auto;
+    }
+    #quotes .quote-box{
+        height: 80%;
+    }
+}
+
+@media (max-width:471px){
+    .divider{
+        display: none;
+    }
+    #quotes .quote-box {
+        height: 90%;
     }
 }
