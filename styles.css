@@ -23,7 +23,6 @@ html{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 20%;
     height: 100%;
     font-style: italic;
     font-size: 2.5rem;
@@ -292,7 +291,7 @@ html{
     margin-top:20px;
 }
 #review .info1{
-    color: hsba(0, 0%, 26%, 1);
+    color:rgba(67, 67, 67, 1);
     font-size: 18px;
     line-height: 28px;
     width:60%;
@@ -343,7 +342,7 @@ html{
     font-size: 18px;
 }
 #review .info2{
-    color :hsba(0, 0%, 26%, 1);
+    color :rgba(67, 67, 67, 1);
     font-size: 18px;
     line-height: 25px;
     width: 40%;
@@ -848,4 +847,10 @@ footer .icon i {
     #quotes .quote-box {
         height: 90%;
     }
+}
+@media (max-width:707px){
+    .divider.last{
+        display: none;
+    }
+    
 }
